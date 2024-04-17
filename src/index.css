@@ -7,4 +7,6 @@
 body {
   font-family: "Epilogue", sans-serif;
   font-size: 18px;
+  font-weight: 500;
+  background-color: hsl(0, 0%, 98%);
 }
