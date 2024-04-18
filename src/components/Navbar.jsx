@@ -1,10 +1,9 @@
 import { Box, Button, IconButton, Stack, Toolbar } from "@mui/material";
 import React from "react";
 import logo from "../images/logo.svg";
-import { ExpandMore } from "@mui/icons-material";
-import menuIcn from "../images/icon-menu.svg";
 import CompanyMenu from "./CompanyMenu";
 import FeaturesMenu from "./FeaturesMenu";
+import MenuDrawer from "./MenuDrawer";
 
 const Navbar = () => {
   return (
@@ -27,7 +26,7 @@ const Navbar = () => {
 
             <Stack
               direction={"row"}
-              sx={{ display: { xs: "none", sm: "flex" } }}
+              sx={{ display: { xs: "none", md: "flex" } }}
             >
               <FeaturesMenu />
 
@@ -105,9 +104,7 @@ const Navbar = () => {
               </Button>
             </Stack>
 
-            <IconButton sx={{ display: { md: "none" } }}>
-              <img src={menuIcn} alt="menu" />
-            </IconButton>
+            <MenuDrawer />
           </Stack>
         </Stack>
       </Toolbar>
